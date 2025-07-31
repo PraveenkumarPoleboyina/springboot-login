@@ -10,11 +10,11 @@ public class Teacher{
     public String home() {
         return "loginpage";
     }
-@GetMapping("/welcome")
-public String display()
-{
-	return "loginpage";
-}
+//@GetMapping("/welcome")
+//public String display()
+//{
+//	return "loginpage";
+//}
 @GetMapping("/submit")
 	public String submit(@RequestParam("username") String s1,@RequestParam("password") String s2,Model m)
 	{
