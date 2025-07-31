@@ -6,6 +6,10 @@ import org.springframework.ui.Model;
 
 @Controller
 public class Teacher{
+	@GetMapping("/")
+    public String home() {
+        return "loginpage";
+    }
 @GetMapping("welcome")
 public String display()
 {
