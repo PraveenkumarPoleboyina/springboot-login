@@ -10,12 +10,12 @@ public class Teacher{
     public String home() {
         return "loginpage";
     }
-@GetMapping("welcome")
+@GetMapping("/welcome")
 public String display()
 {
 	return "loginpage";
 }
-@GetMapping("submit")
+@GetMapping("/submit")
 	public String submit(@RequestParam("username") String s1,@RequestParam("password") String s2,Model m)
 	{
 		if(s1.equals("praveenkumar") && s2.equals("12345"))
