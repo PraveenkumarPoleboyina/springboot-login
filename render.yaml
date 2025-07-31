@@ -1,0 +1,9 @@
+services:
+  - name: springboot-login
+    type: web
+    runtime: docker
+    repo: https://github.com/PraveenkumarPoleboyina/springboot-login
+    branch: main
+    dockerfilePath: ./Dockerfile
+    plan: free
+    autoDeploy: true
